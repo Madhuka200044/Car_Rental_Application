@@ -1,0 +1,198 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Car rental application\\Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|d:\\car rental application\\project\\returnform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|solutionrelative:returnform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|D:\\Car rental application\\Project\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|solutionrelative:signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|D:\\Car rental application\\Project\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|d:\\car rental application\\project\\addcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|solutionrelative:addcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|D:\\Car rental application\\Project\\customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|solutionrelative:customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|d:\\car rental application\\project\\rentalform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|solutionrelative:rentalform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|D:\\Car rental application\\Project\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|solutionrelative:adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|D:\\Car rental application\\Project\\loadingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|solutionrelative:loadingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|D:\\Car rental application\\Project\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|solutionrelative:signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|D:\\Car rental application\\Project\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|D:\\Car rental application\\Project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReturnForm.cs [Design]",
+              "DocumentMoniker": "D:\\Car rental application\\Project\\ReturnForm.cs",
+              "RelativeDocumentMoniker": "ReturnForm.cs",
+              "ToolTip": "D:\\Car rental application\\Project\\ReturnForm.cs [Design]",
+              "RelativeToolTip": "ReturnForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T07:37:51.061Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RentalForm.cs [Design]",
+              "DocumentMoniker": "D:\\Car rental application\\Project\\RentalForm.cs",
+              "RelativeDocumentMoniker": "RentalForm.cs",
+              "ToolTip": "D:\\Car rental application\\Project\\RentalForm.cs [Design]",
+              "RelativeToolTip": "RentalForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T07:40:12.097Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomerForm.cs [Design]",
+              "DocumentMoniker": "D:\\Car rental application\\Project\\CustomerForm.cs",
+              "RelativeDocumentMoniker": "CustomerForm.cs",
+              "ToolTip": "D:\\Car rental application\\Project\\CustomerForm.cs [Design]",
+              "RelativeToolTip": "CustomerForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T08:54:34.187Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddCar.cs [Design]",
+              "DocumentMoniker": "D:\\Car rental application\\Project\\AddCar.cs",
+              "RelativeDocumentMoniker": "AddCar.cs",
+              "ToolTip": "D:\\Car rental application\\Project\\AddCar.cs [Design]",
+              "RelativeToolTip": "AddCar.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T08:23:09.513Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "D:\\Car rental application\\Project\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "D:\\Car rental application\\Project\\LoginForm.cs [Design]",
+              "RelativeToolTip": "LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T11:13:26.378Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SignupForm.cs [Design]",
+              "DocumentMoniker": "D:\\Car rental application\\Project\\SignupForm.cs",
+              "RelativeDocumentMoniker": "SignupForm.cs",
+              "ToolTip": "D:\\Car rental application\\Project\\SignupForm.cs [Design]",
+              "RelativeToolTip": "SignupForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T15:12:50.627Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdminForm.cs [Design]",
+              "DocumentMoniker": "D:\\Car rental application\\Project\\AdminForm.cs",
+              "RelativeDocumentMoniker": "AdminForm.cs",
+              "ToolTip": "D:\\Car rental application\\Project\\AdminForm.cs [Design]",
+              "RelativeToolTip": "AdminForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T07:31:06.406Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoadingForm.cs [Design]",
+              "DocumentMoniker": "D:\\Car rental application\\Project\\LoadingForm.cs",
+              "RelativeDocumentMoniker": "LoadingForm.cs",
+              "ToolTip": "D:\\Car rental application\\Project\\LoadingForm.cs [Design]",
+              "RelativeToolTip": "LoadingForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T07:09:42.379Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Car rental application\\Project\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Car rental application\\Project\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T15:25:16.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SignupForm.cs",
+              "DocumentMoniker": "D:\\Car rental application\\Project\\SignupForm.cs",
+              "RelativeDocumentMoniker": "SignupForm.cs",
+              "ToolTip": "D:\\Car rental application\\Project\\SignupForm.cs",
+              "RelativeToolTip": "SignupForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T15:16:34.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "D:\\Car rental application\\Project\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "D:\\Car rental application\\Project\\LoginForm.cs",
+              "RelativeToolTip": "LoginForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T11:25:49.745Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
