@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.AddCusBtn = new System.Windows.Forms.Button();
+            this.AddCarBtn = new System.Windows.Forms.Button();
+            this.LogoutBtn = new System.Windows.Forms.Button();
+            this.ExitBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.RenterBtn = new System.Windows.Forms.Button();
+            this.ReturnBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,45 +49,45 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "WELCOME TO SUPER CAR RENTAL";
             // 
-            // button2
+            // AddCusBtn
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(294, 162);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(220, 41);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "ADD CUSTOMER";
-            this.button2.UseVisualStyleBackColor = true;
+            this.AddCusBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddCusBtn.Location = new System.Drawing.Point(294, 162);
+            this.AddCusBtn.Name = "AddCusBtn";
+            this.AddCusBtn.Size = new System.Drawing.Size(220, 41);
+            this.AddCusBtn.TabIndex = 3;
+            this.AddCusBtn.Text = "ADD CUSTOMER";
+            this.AddCusBtn.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // AddCarBtn
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(294, 105);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(220, 41);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "ADD CAR";
-            this.button3.UseVisualStyleBackColor = true;
+            this.AddCarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddCarBtn.Location = new System.Drawing.Point(294, 105);
+            this.AddCarBtn.Name = "AddCarBtn";
+            this.AddCarBtn.Size = new System.Drawing.Size(220, 41);
+            this.AddCarBtn.TabIndex = 4;
+            this.AddCarBtn.Text = "ADD CAR";
+            this.AddCarBtn.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // LogoutBtn
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(150, 357);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(139, 35);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Log Out";
-            this.button4.UseVisualStyleBackColor = true;
+            this.LogoutBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogoutBtn.Location = new System.Drawing.Point(150, 357);
+            this.LogoutBtn.Name = "LogoutBtn";
+            this.LogoutBtn.Size = new System.Drawing.Size(139, 35);
+            this.LogoutBtn.TabIndex = 5;
+            this.LogoutBtn.Text = "Log Out";
+            this.LogoutBtn.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // ExitBtn
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(482, 357);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(139, 35);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Exit";
-            this.button5.UseVisualStyleBackColor = true;
+            this.ExitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitBtn.Location = new System.Drawing.Point(482, 357);
+            this.ExitBtn.Name = "ExitBtn";
+            this.ExitBtn.Size = new System.Drawing.Size(139, 35);
+            this.ExitBtn.TabIndex = 6;
+            this.ExitBtn.Text = "Exit";
+            this.ExitBtn.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -99,25 +99,25 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // RenterBtn
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(294, 218);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(220, 41);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "RENTER CAR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.RenterBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RenterBtn.Location = new System.Drawing.Point(294, 218);
+            this.RenterBtn.Name = "RenterBtn";
+            this.RenterBtn.Size = new System.Drawing.Size(220, 41);
+            this.RenterBtn.TabIndex = 7;
+            this.RenterBtn.Text = "RENTER CAR";
+            this.RenterBtn.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // ReturnBtn
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(294, 278);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(220, 41);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "RETURN CAR";
-            this.button6.UseVisualStyleBackColor = true;
+            this.ReturnBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReturnBtn.Location = new System.Drawing.Point(294, 278);
+            this.ReturnBtn.Name = "ReturnBtn";
+            this.ReturnBtn.Size = new System.Drawing.Size(220, 41);
+            this.ReturnBtn.TabIndex = 8;
+            this.ReturnBtn.Text = "RETURN CAR";
+            this.ReturnBtn.UseVisualStyleBackColor = true;
             // 
             // AdminForm
             // 
@@ -125,12 +125,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.ReturnBtn);
+            this.Controls.Add(this.RenterBtn);
+            this.Controls.Add(this.ExitBtn);
+            this.Controls.Add(this.LogoutBtn);
+            this.Controls.Add(this.AddCarBtn);
+            this.Controls.Add(this.AddCusBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "AdminForm";
@@ -146,11 +146,11 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button AddCusBtn;
+        private System.Windows.Forms.Button AddCarBtn;
+        private System.Windows.Forms.Button LogoutBtn;
+        private System.Windows.Forms.Button ExitBtn;
+        private System.Windows.Forms.Button RenterBtn;
+        private System.Windows.Forms.Button ReturnBtn;
     }
 }

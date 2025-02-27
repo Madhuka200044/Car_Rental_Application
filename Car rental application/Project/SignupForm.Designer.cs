@@ -30,18 +30,18 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.LoginLinkBtn = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
-            this.LoginBtn = new System.Windows.Forms.Button();
+            this.SignupBtn = new System.Windows.Forms.Button();
             this.WELCOME = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Epassword = new System.Windows.Forms.TextBox();
+            this.EunserName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.reEpassword = new System.Windows.Forms.TextBox();
+            this.ExitBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,16 +66,17 @@
             this.label4.TabIndex = 24;
             this.label4.Text = "or";
             // 
-            // linkLabel1
+            // LoginLinkBtn
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(602, 403);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(42, 16);
-            this.linkLabel1.TabIndex = 23;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Login";
+            this.LoginLinkBtn.AutoSize = true;
+            this.LoginLinkBtn.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginLinkBtn.Location = new System.Drawing.Point(602, 403);
+            this.LoginLinkBtn.Name = "LoginLinkBtn";
+            this.LoginLinkBtn.Size = new System.Drawing.Size(42, 16);
+            this.LoginLinkBtn.TabIndex = 23;
+            this.LoginLinkBtn.TabStop = true;
+            this.LoginLinkBtn.Text = "Login";
+            this.LoginLinkBtn.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LoginLinkBtn_LinkClicked);
             // 
             // label3
             // 
@@ -87,17 +88,17 @@
             this.label3.TabIndex = 22;
             this.label3.Text = "Hava an account ";
             // 
-            // LoginBtn
+            // SignupBtn
             // 
-            this.LoginBtn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.LoginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginBtn.Location = new System.Drawing.Point(471, 325);
-            this.LoginBtn.Margin = new System.Windows.Forms.Padding(10);
-            this.LoginBtn.Name = "LoginBtn";
-            this.LoginBtn.Size = new System.Drawing.Size(111, 38);
-            this.LoginBtn.TabIndex = 21;
-            this.LoginBtn.Text = "SIGN UP";
-            this.LoginBtn.UseVisualStyleBackColor = false;
+            this.SignupBtn.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.SignupBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignupBtn.Location = new System.Drawing.Point(471, 325);
+            this.SignupBtn.Margin = new System.Windows.Forms.Padding(10);
+            this.SignupBtn.Name = "SignupBtn";
+            this.SignupBtn.Size = new System.Drawing.Size(111, 38);
+            this.SignupBtn.TabIndex = 21;
+            this.SignupBtn.Text = "SIGN UP";
+            this.SignupBtn.UseVisualStyleBackColor = false;
             // 
             // WELCOME
             // 
@@ -111,25 +112,25 @@
             this.WELCOME.Text = "Sign Up";
             this.WELCOME.Click += new System.EventHandler(this.WELCOME_Click);
             // 
-            // textBox2
+            // Epassword
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(454, 215);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(10);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(298, 20);
-            this.textBox2.TabIndex = 19;
+            this.Epassword.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.Epassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Epassword.Location = new System.Drawing.Point(454, 215);
+            this.Epassword.Margin = new System.Windows.Forms.Padding(10);
+            this.Epassword.Name = "Epassword";
+            this.Epassword.Size = new System.Drawing.Size(298, 20);
+            this.Epassword.TabIndex = 19;
             // 
-            // textBox1
+            // EunserName
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(454, 140);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(298, 20);
-            this.textBox1.TabIndex = 18;
+            this.EunserName.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.EunserName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EunserName.Location = new System.Drawing.Point(454, 140);
+            this.EunserName.Margin = new System.Windows.Forms.Padding(10);
+            this.EunserName.Name = "EunserName";
+            this.EunserName.Size = new System.Drawing.Size(298, 20);
+            this.EunserName.TabIndex = 18;
             // 
             // label2
             // 
@@ -173,27 +174,28 @@
             this.label6.TabIndex = 26;
             this.label6.Text = "Re-enter passowrd :";
             // 
-            // textBox3
+            // reEpassword
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(454, 287);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(10);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(298, 20);
-            this.textBox3.TabIndex = 27;
+            this.reEpassword.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.reEpassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.reEpassword.Location = new System.Drawing.Point(454, 287);
+            this.reEpassword.Margin = new System.Windows.Forms.Padding(10);
+            this.reEpassword.Name = "reEpassword";
+            this.reEpassword.Size = new System.Drawing.Size(298, 20);
+            this.reEpassword.TabIndex = 27;
             // 
-            // button1
+            // ExitBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(602, 327);
-            this.button1.Margin = new System.Windows.Forms.Padding(10);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 38);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "EXIT";
-            this.button1.UseVisualStyleBackColor = false;
+            this.ExitBtn.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ExitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitBtn.Location = new System.Drawing.Point(602, 327);
+            this.ExitBtn.Margin = new System.Windows.Forms.Padding(10);
+            this.ExitBtn.Name = "ExitBtn";
+            this.ExitBtn.Size = new System.Drawing.Size(111, 38);
+            this.ExitBtn.TabIndex = 28;
+            this.ExitBtn.Text = "EXIT";
+            this.ExitBtn.UseVisualStyleBackColor = false;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
             // SignupForm
             // 
@@ -201,17 +203,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.ExitBtn);
+            this.Controls.Add(this.reEpassword);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.LoginLinkBtn);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.LoginBtn);
+            this.Controls.Add(this.SignupBtn);
             this.Controls.Add(this.WELCOME);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Epassword);
+            this.Controls.Add(this.EunserName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -227,17 +229,17 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel LoginLinkBtn;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button LoginBtn;
+        private System.Windows.Forms.Button SignupBtn;
         private System.Windows.Forms.Label WELCOME;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Epassword;
+        private System.Windows.Forms.TextBox EunserName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox reEpassword;
+        private System.Windows.Forms.Button ExitBtn;
     }
 }

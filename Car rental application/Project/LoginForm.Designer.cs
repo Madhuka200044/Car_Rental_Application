@@ -1,6 +1,6 @@
 ﻿namespace Project
 {
-    partial class Login
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.U_nameTxt = new System.Windows.Forms.TextBox();
+            this.PasswordTxt = new System.Windows.Forms.TextBox();
             this.WELCOME = new System.Windows.Forms.Label();
             this.LoginBtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -63,26 +63,26 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Passowrd :";
             // 
-            // textBox1
+            // U_nameTxt
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(455, 148);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(298, 20);
-            this.textBox1.TabIndex = 3;
+            this.U_nameTxt.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.U_nameTxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.U_nameTxt.Location = new System.Drawing.Point(455, 148);
+            this.U_nameTxt.Margin = new System.Windows.Forms.Padding(10);
+            this.U_nameTxt.Name = "U_nameTxt";
+            this.U_nameTxt.Size = new System.Drawing.Size(298, 20);
+            this.U_nameTxt.TabIndex = 3;
             // 
-            // textBox2
+            // PasswordTxt
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(455, 223);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(10);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(298, 20);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.PasswordTxt.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.PasswordTxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PasswordTxt.Location = new System.Drawing.Point(455, 223);
+            this.PasswordTxt.Margin = new System.Windows.Forms.Padding(10);
+            this.PasswordTxt.Name = "PasswordTxt";
+            this.PasswordTxt.Size = new System.Drawing.Size(298, 20);
+            this.PasswordTxt.TabIndex = 4;
+            this.PasswordTxt.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // WELCOME
             // 
@@ -108,6 +108,7 @@
             this.LoginBtn.TabIndex = 12;
             this.LoginBtn.Text = "SIGN IN";
             this.LoginBtn.UseVisualStyleBackColor = false;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // label3
             // 
@@ -175,8 +176,9 @@
             this.button1.TabIndex = 22;
             this.button1.Text = "EXIT";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Login
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -190,11 +192,11 @@
             this.Controls.Add(this.LoginBtn);
             this.Controls.Add(this.WELCOME);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.PasswordTxt);
+            this.Controls.Add(this.U_nameTxt);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Login";
+            this.Name = "LoginForm";
             this.Text = "LoginForm";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -207,8 +209,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox U_nameTxt;
+        private System.Windows.Forms.TextBox PasswordTxt;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label WELCOME;
         private System.Windows.Forms.Button LoginBtn;

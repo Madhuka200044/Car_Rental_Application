@@ -21,5 +21,22 @@ namespace Project
         {
 
         }
+
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Confirm Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void LoginLinkBtn_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LoginForm LForm = new LoginForm();
+            this.Hide();
+            LForm.Show();
+        }
     }
 }
