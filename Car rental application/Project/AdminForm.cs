@@ -21,5 +21,13 @@ namespace Project
         {
 
         }
+
+        private void AddCarBtn_Click(object sender, EventArgs e)
+        {
+            AddCar addCar = new AddCar();
+            addCar.Show();
+
+
+        }
     }
 }

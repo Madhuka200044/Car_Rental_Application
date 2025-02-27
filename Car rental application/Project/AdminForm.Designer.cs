@@ -68,6 +68,7 @@
             this.AddCarBtn.TabIndex = 4;
             this.AddCarBtn.Text = "ADD CAR";
             this.AddCarBtn.UseVisualStyleBackColor = true;
+            this.AddCarBtn.Click += new System.EventHandler(this.AddCarBtn_Click);
             // 
             // LogoutBtn
             // 

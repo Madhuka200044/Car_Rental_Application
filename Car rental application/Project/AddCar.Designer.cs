@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.AvalbleOrNot = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtrpd = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtcolor = new System.Windows.Forms.TextBox();
+            this.txtbrand = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtcarno = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,7 +41,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.AddcarBtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -49,6 +49,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,11 +62,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.AvalbleOrNot);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtrpd);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.txtcolor);
+            this.panel1.Controls.Add(this.txtbrand);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txtcarno);
             this.panel1.Controls.Add(this.label3);
@@ -74,16 +79,16 @@
             this.panel1.TabIndex = 16;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // comboBox1
+            // AvalbleOrNot
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.AvalbleOrNot.FormattingEnabled = true;
+            this.AvalbleOrNot.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.comboBox1.Location = new System.Drawing.Point(176, 260);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(165, 28);
-            this.comboBox1.TabIndex = 15;
+            this.AvalbleOrNot.Location = new System.Drawing.Point(176, 260);
+            this.AvalbleOrNot.Name = "AvalbleOrNot";
+            this.AvalbleOrNot.Size = new System.Drawing.Size(165, 28);
+            this.AvalbleOrNot.TabIndex = 15;
             // 
             // label4
             // 
@@ -92,9 +97,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(8, 264);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 24);
+            this.label4.Size = new System.Drawing.Size(95, 24);
             this.label4.TabIndex = 11;
-            this.label4.Text = "Avalable ";
+            this.label4.Text = "Available";
             // 
             // txtrpd
             // 
@@ -115,13 +120,13 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Rent per Day";
             // 
-            // txtcolor
+            // txtbrand
             // 
-            this.txtcolor.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcolor.Location = new System.Drawing.Point(176, 160);
-            this.txtcolor.Name = "txtcolor";
-            this.txtcolor.Size = new System.Drawing.Size(165, 33);
-            this.txtcolor.TabIndex = 7;
+            this.txtbrand.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbrand.Location = new System.Drawing.Point(176, 160);
+            this.txtbrand.Name = "txtbrand";
+            this.txtbrand.Size = new System.Drawing.Size(165, 33);
+            this.txtbrand.TabIndex = 7;
             // 
             // label6
             // 
@@ -174,10 +179,17 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(368, 137);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5});
+            this.dataGridView1.Location = new System.Drawing.Point(443, 118);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(469, 292);
+            this.dataGridView1.Size = new System.Drawing.Size(546, 292);
             this.dataGridView1.TabIndex = 18;
             // 
             // label7
@@ -191,25 +203,27 @@
             this.label7.Text = "WELCOME TO ADD CAR OPTION.";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // button4
+            // AddcarBtn
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(394, 435);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(139, 35);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "New";
-            this.button4.UseVisualStyleBackColor = true;
+            this.AddcarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddcarBtn.Location = new System.Drawing.Point(394, 435);
+            this.AddcarBtn.Name = "AddcarBtn";
+            this.AddcarBtn.Size = new System.Drawing.Size(139, 35);
+            this.AddcarBtn.TabIndex = 20;
+            this.AddcarBtn.Text = "Add Car";
+            this.AddcarBtn.UseVisualStyleBackColor = true;
+            this.AddcarBtn.Click += new System.EventHandler(this.button4_Click);
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(539, 435);
+            this.button1.Location = new System.Drawing.Point(645, 435);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(139, 35);
             this.button1.TabIndex = 21;
             this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -220,26 +234,29 @@
             this.button2.TabIndex = 22;
             this.button2.Text = "Delete";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(684, 476);
+            this.button3.Location = new System.Drawing.Point(645, 476);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(139, 35);
             this.button3.TabIndex = 23;
             this.button3.Text = "Back";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(539, 476);
+            this.button5.Location = new System.Drawing.Point(866, 476);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(139, 35);
             this.button5.TabIndex = 24;
             this.button5.Text = "Exit";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // pictureBox1
             // 
@@ -256,7 +273,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.LightCyan;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(569, 110);
+            this.label2.Location = new System.Drawing.Point(680, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 24);
             this.label2.TabIndex = 25;
@@ -265,26 +282,52 @@
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(684, 435);
+            this.button6.Location = new System.Drawing.Point(866, 435);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(139, 35);
             this.button6.TabIndex = 26;
             this.button6.Text = "Clear";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Car ID";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Car Number";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Brand";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Rent pay day";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Available";
+            this.Column5.Name = "Column5";
             // 
             // AddCar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(839, 523);
+            this.ClientSize = new System.Drawing.Size(1083, 523);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.AddcarBtn);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pictureBox1);
@@ -307,7 +350,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtrpd;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtcolor;
+        private System.Windows.Forms.TextBox txtbrand;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtcarno;
         private System.Windows.Forms.Label label3;
@@ -316,13 +359,18 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button AddcarBtn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox AvalbleOrNot;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }
