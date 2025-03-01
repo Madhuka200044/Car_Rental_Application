@@ -35,7 +35,7 @@
             this.SignupBtn = new System.Windows.Forms.Button();
             this.WELCOME = new System.Windows.Forms.Label();
             this.Epassword = new System.Windows.Forms.TextBox();
-            this.EunserName = new System.Windows.Forms.TextBox();
+            this.EUname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -123,15 +123,15 @@
             this.Epassword.Size = new System.Drawing.Size(298, 20);
             this.Epassword.TabIndex = 19;
             // 
-            // EunserName
+            // EUname
             // 
-            this.EunserName.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.EunserName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EunserName.Location = new System.Drawing.Point(454, 140);
-            this.EunserName.Margin = new System.Windows.Forms.Padding(10);
-            this.EunserName.Name = "EunserName";
-            this.EunserName.Size = new System.Drawing.Size(298, 20);
-            this.EunserName.TabIndex = 18;
+            this.EUname.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.EUname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EUname.Location = new System.Drawing.Point(454, 140);
+            this.EUname.Margin = new System.Windows.Forms.Padding(10);
+            this.EUname.Name = "EUname";
+            this.EUname.Size = new System.Drawing.Size(298, 20);
+            this.EUname.TabIndex = 18;
             // 
             // label2
             // 
@@ -214,7 +214,7 @@
             this.Controls.Add(this.SignupBtn);
             this.Controls.Add(this.WELCOME);
             this.Controls.Add(this.Epassword);
-            this.Controls.Add(this.EunserName);
+            this.Controls.Add(this.EUname);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -235,7 +235,7 @@
         private System.Windows.Forms.Button SignupBtn;
         private System.Windows.Forms.Label WELCOME;
         private System.Windows.Forms.TextBox Epassword;
-        private System.Windows.Forms.TextBox EunserName;
+        private System.Windows.Forms.TextBox EUname;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
