@@ -82,6 +82,7 @@
             this.PasswordTxt.Name = "PasswordTxt";
             this.PasswordTxt.Size = new System.Drawing.Size(298, 20);
             this.PasswordTxt.TabIndex = 4;
+            this.PasswordTxt.UseSystemPasswordChar = true;
             this.PasswordTxt.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // WELCOME

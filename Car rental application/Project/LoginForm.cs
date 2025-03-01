@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Project
 {
@@ -16,6 +18,9 @@ namespace Project
         {
             InitializeComponent();
         }
+        SqlConnection Signin = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Car rental application\Project\CarReg.mdf"";Integrated Security=True");
+        SqlCommand sign;
+        SqlDataReader si;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -48,28 +53,46 @@ namespace Project
         {
 
         }
+        private bool AuthenticateUser(string username, string password)
+        {
+            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"D:\\Car rental application\\Project\\CarReg.mdf\";Integrated Security=True";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                string query = "SELECT COUNT(*) FROM AdminLoginData WHERE UserName = @username AND Password = @password";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@username", username);
+                cmd.Parameters.AddWithValue("@password", password); // Consider hashing for security
+
+                conn.Open();
+                int count = (int)cmd.ExecuteScalar();
+
+                return count > 0;
+            }
+        }
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-           String User   =   U_nameTxt.Text;
-           String Password = PasswordTxt.Text;
+           String UserEnter   =   U_nameTxt.Text;
+           String PasswordEnter = PasswordTxt.Text;
 
 
-            if(User == "Admin" && Password == "Admin")
+           if (AuthenticateUser(UserEnter, PasswordEnter))
             {
-                AdminForm AForm = new AdminForm();
+                MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
-                AForm.Show();
-
-               
+                AdminForm ADF = new AdminForm(); // Assuming you have a MainForm
+                ADF.Show();
             }
             else
             {
-                MessageBox.Show("Invalid Username or Password");
+                MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 U_nameTxt.Clear();
                 PasswordTxt.Clear();
-                U_nameTxt.Focus();
+
+
             }
+
 
         }
 

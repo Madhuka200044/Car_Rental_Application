@@ -35,7 +35,7 @@
             this.SignupBtn = new System.Windows.Forms.Button();
             this.WELCOME = new System.Windows.Forms.Label();
             this.Epassword = new System.Windows.Forms.TextBox();
-            this.EUname = new System.Windows.Forms.TextBox();
+            this.EunserName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -100,6 +100,7 @@
             this.SignupBtn.Text = "SIGN UP";
             this.SignupBtn.UseVisualStyleBackColor = false;
             this.SignupBtn.Click += new System.EventHandler(this.SignupBtn_Click);
+            this.SignupBtn.Validating += new System.ComponentModel.CancelEventHandler(this.SignupBtn_Validating);
             // 
             // WELCOME
             // 
@@ -122,16 +123,18 @@
             this.Epassword.Name = "Epassword";
             this.Epassword.Size = new System.Drawing.Size(298, 20);
             this.Epassword.TabIndex = 19;
+            this.Epassword.UseSystemPasswordChar = true;
             // 
-            // EUname
+            // EunserName
             // 
-            this.EUname.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.EUname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EUname.Location = new System.Drawing.Point(454, 140);
-            this.EUname.Margin = new System.Windows.Forms.Padding(10);
-            this.EUname.Name = "EUname";
-            this.EUname.Size = new System.Drawing.Size(298, 20);
-            this.EUname.TabIndex = 18;
+            this.EunserName.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.EunserName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EunserName.Location = new System.Drawing.Point(454, 140);
+            this.EunserName.Margin = new System.Windows.Forms.Padding(10);
+            this.EunserName.Name = "EunserName";
+            this.EunserName.Size = new System.Drawing.Size(298, 20);
+            this.EunserName.TabIndex = 18;
+            this.EunserName.Validating += new System.ComponentModel.CancelEventHandler(this.EunserName_Validating);
             // 
             // label2
             // 
@@ -184,6 +187,7 @@
             this.reEpassword.Name = "reEpassword";
             this.reEpassword.Size = new System.Drawing.Size(298, 20);
             this.reEpassword.TabIndex = 27;
+            this.reEpassword.UseSystemPasswordChar = true;
             // 
             // ExitBtn
             // 
@@ -214,7 +218,7 @@
             this.Controls.Add(this.SignupBtn);
             this.Controls.Add(this.WELCOME);
             this.Controls.Add(this.Epassword);
-            this.Controls.Add(this.EUname);
+            this.Controls.Add(this.EunserName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -235,7 +239,7 @@
         private System.Windows.Forms.Button SignupBtn;
         private System.Windows.Forms.Label WELCOME;
         private System.Windows.Forms.TextBox Epassword;
-        private System.Windows.Forms.TextBox EUname;
+        private System.Windows.Forms.TextBox EunserName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;

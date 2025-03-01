@@ -26,8 +26,16 @@ namespace Project
         {
             AddCar addCar = new AddCar();
             addCar.Show();
+            Close();
 
 
+        }
+
+        private void AddCusBtn_Click(object sender, EventArgs e)
+        {
+            CustomerForm Addcustomer = new CustomerForm();
+            Addcustomer.Show();
+            Close();
         }
     }
 }

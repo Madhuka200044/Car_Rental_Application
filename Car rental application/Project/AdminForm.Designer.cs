@@ -58,6 +58,7 @@
             this.AddCusBtn.TabIndex = 3;
             this.AddCusBtn.Text = "ADD CUSTOMER";
             this.AddCusBtn.UseVisualStyleBackColor = true;
+            this.AddCusBtn.Click += new System.EventHandler(this.AddCusBtn_Click);
             // 
             // AddCarBtn
             // 

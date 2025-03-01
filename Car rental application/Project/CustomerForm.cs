@@ -24,7 +24,7 @@ namespace Project
         SqlConnection cus = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Car rental application\Project\CarReg.mdf"";Integrated Security=True");
         SqlCommand cmd2;
         SqlDataReader dr2;
-        String customerID;
+        String  customerID;
         bool mode2 = true;
 
 
@@ -197,40 +197,53 @@ namespace Project
         private void txtcusUpdate_Click(object sender, EventArgs e)
         {
 
-            string query = "UPDATE AddCustomerTable SET customerName = @customerName, customerIDNumber = @customerIDNumber, customerPhoneNumber = @customerPhone WHERE customerID = @customerID";
-
-           
+            // Ensure a customer is selected
+            if (string.IsNullOrWhiteSpace(txtCusID.Text))
             {
-                SqlCommand cmd2 = new SqlCommand(query, cus);
-
-                // Adding parameters properly
-                cmd2.Parameters.AddWithValue("@customerName", txtcusName.Text);
-                cmd2.Parameters.AddWithValue("@customerIDNumber", txtcusIDn.Text);
-                cmd2.Parameters.AddWithValue("@customerPhone", txtcusPhone.Text);
-                cmd2.Parameters.AddWithValue("@customerID", txtCusID.Text);  // Ensure this is set correctly
-
-                cus.Open();
-                int rowsAffected = cmd2.ExecuteNonQuery();
-                cus.Close();
-
-                if (rowsAffected > 0)
-                {
-                    MessageBox.Show("Customer details updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtCusID.Clear();
-                    txtcusName.Clear();
-                    txtcusIDn.Clear();
-                    txtcusPhone.Clear();
-                    LoadData();
-                }
-                else
-                {
-                    MessageBox.Show("No matching Customer ID found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                MessageBox.Show("Please enter a valid Customer ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
 
 
-        }
+            string cusId = txtCusID.Text;
+            string cusName = txtcusName.Text;
+            string cusIDNumber = txtcusIDn.Text;
+            string cusPhone = txtcusPhone.Text;
 
+            try 
+            {
+                string query = "UPDATE AddCustomerTable SET customerName = @cusName, customerIDNumber = @cusIDNumber, customerPhoneNumber = @cusPhone WHERE customerID = @cusID";
+
+                using (SqlConnection cus = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Car rental application\Project\CarReg.mdf"";Integrated Security=True"))
+                {
+                    using (SqlCommand cmd2 = new SqlCommand(query, cus))
+                    {
+                        cmd2.Parameters.AddWithValue("@customerID", txtCusID.Text);
+                        cmd2.Parameters.AddWithValue("@customerName", txtcusName.Text);
+                        cmd2.Parameters.AddWithValue("@customerIDnumber", txtcusIDn.Text);
+                        cmd2.Parameters.AddWithValue("@customerPhoneNumber", txtcusPhone.Text);
+
+                        cus.Open();
+                        int rowsAffected = cmd2.ExecuteNonQuery();
+                        cus.Close();
+
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Customer details updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            LoadData(); // Refresh the DataGridView
+                        }
+                        else
+                        {
+                            MessageBox.Show("No matching Customer ID found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error updating customer details: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
     
 }
