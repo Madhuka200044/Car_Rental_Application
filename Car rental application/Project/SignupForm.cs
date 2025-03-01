@@ -38,5 +38,10 @@ namespace Project
             this.Hide();
             LForm.Show();
         }
+
+        private void SignupBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

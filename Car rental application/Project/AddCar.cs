@@ -38,15 +38,15 @@ namespace Project
             if (dr.Read())
             {
                 int id = int.Parse(dr[0].ToString()) + 1;
-                CarID = id.ToString("0000");
+                CarID = "A" + id.ToString("0000");
             }
             else if (Convert.IsDBNull(dr))
             {
-                CarID = "0000";
+                CarID = "A0000";
             }
             else
             {
-                CarID = "0000";
+                CarID = "A0000";
             }
 
             txtcid.Text = CarID.ToString();
@@ -112,6 +112,12 @@ namespace Project
                 cmd.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("Car Added Successfully");
+                txtcid.Clear();
+                txtcarno.Clear();
+                txtbrand.Clear();
+                txtrpd.Clear();
+                AvalbleOrNot.SelectedIndex = -1;
+                LoadData();
             }
             else
             {
@@ -121,6 +127,12 @@ namespace Project
                 cmd.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("Car Updated Successfully");
+                txtcid.Clear();
+                txtcarno.Clear();
+                txtbrand.Clear();
+                txtrpd.Clear();
+                AvalbleOrNot.SelectedIndex = -1;
+                LoadData(); 
             }
 
         }
@@ -223,7 +235,7 @@ namespace Project
                             {
                                 MessageBox.Show("Car deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 LoadData(); // Refresh DataGridView
-                               
+                                LoadData();
                             }
                             else
                             {
@@ -260,6 +272,11 @@ namespace Project
             {
                 Application.Exit();
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
