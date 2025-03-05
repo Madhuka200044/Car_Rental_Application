@@ -110,6 +110,7 @@
             this.RenterBtn.TabIndex = 7;
             this.RenterBtn.Text = "RENTER CAR";
             this.RenterBtn.UseVisualStyleBackColor = true;
+            this.RenterBtn.Click += new System.EventHandler(this.RenterBtn_Click);
             // 
             // ReturnBtn
             // 
@@ -120,6 +121,7 @@
             this.ReturnBtn.TabIndex = 8;
             this.ReturnBtn.Text = "RETURN CAR";
             this.ReturnBtn.UseVisualStyleBackColor = true;
+            this.ReturnBtn.Click += new System.EventHandler(this.ReturnBtn_Click);
             // 
             // AdminForm
             // 

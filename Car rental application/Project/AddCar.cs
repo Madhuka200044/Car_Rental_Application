@@ -99,42 +99,50 @@ namespace Project
             string rpd = txtrpd.Text;
             string avalable = AvalbleOrNot.SelectedItem.ToString();
 
-            if(mode == true)
+            try
             {
-                string query = "insert into AddCarTable(CarID,CarNum,CarModel,Payrentday,Available) values('" + cid + "','" + cnum + "','" + cmodel + "','" + rpd + "','" + avalable + "')";
-                con.Open();
-                cmd = new SqlCommand(query, con);
-                cmd.Parameters.AddWithValue("CarID", txtcid.Text);
-                cmd.Parameters.AddWithValue("CarNum", txtcarno.Text);
-                cmd.Parameters.AddWithValue("CarModel", txtbrand.Text);
-                cmd.Parameters.AddWithValue("Payrentday", txtrpd.Text);
-                cmd.Parameters.AddWithValue("Available", AvalbleOrNot.SelectedItem.ToString()); 
-                cmd.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("Car Added Successfully");
-                txtcid.Clear();
-                txtcarno.Clear();
-                txtbrand.Clear();
-                txtrpd.Clear();
-                AvalbleOrNot.SelectedIndex = -1;
-                LoadData();
-            }
-            else
-            {
-                string query = "update AddCarTable set CarNum = '" + cnum + "',CarModel = '" + cmodel + "',Payrentday = '" + rpd + "',Available = '" + avalable + "' where CarID = '" + cid + "'";
-                con.Open();
-                cmd = new SqlCommand(query, con);
-                cmd.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("Car Updated Successfully");
-                txtcid.Clear();
-                txtcarno.Clear();
-                txtbrand.Clear();
-                txtrpd.Clear();
-                AvalbleOrNot.SelectedIndex = -1;
-                LoadData(); 
-            }
 
+                if (mode == true)
+                {
+                    string query = "insert into AddCarTable(CarID,CarNum,CarModel,Payrentday,Available) values('" + cid + "','" + cnum + "','" + cmodel + "','" + rpd + "','" + avalable + "')";
+                    con.Open();
+                    cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("CarID", txtcid.Text);
+                    cmd.Parameters.AddWithValue("CarNum", txtcarno.Text);
+                    cmd.Parameters.AddWithValue("CarModel", txtbrand.Text);
+                    cmd.Parameters.AddWithValue("Payrentday", txtrpd.Text);
+                    cmd.Parameters.AddWithValue("Available", AvalbleOrNot.SelectedItem.ToString());
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("Car Added Successfully");
+                    txtcid.Clear();
+                    txtcarno.Clear();
+                    txtbrand.Clear();
+                    txtrpd.Clear();
+                    AvalbleOrNot.SelectedIndex = -1;
+                    LoadData();
+                }
+                else
+                {
+                    string query = "update AddCarTable set CarNum = '" + cnum + "',CarModel = '" + cmodel + "',Payrentday = '" + rpd + "',Available = '" + avalable + "' where CarID = '" + cid + "'";
+                    con.Open();
+                    cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("Car Updated Successfully");
+                    txtcid.Clear();
+                    txtcarno.Clear();
+                    txtbrand.Clear();
+                    txtrpd.Clear();
+                    AvalbleOrNot.SelectedIndex = -1;
+                    LoadData();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

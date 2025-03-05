@@ -37,5 +37,19 @@ namespace Project
             Addcustomer.Show();
             Close();
         }
+
+        private void RenterBtn_Click(object sender, EventArgs e)
+        {
+            RentalForm rental = new RentalForm();
+            rental.Show();
+            Close();
+        }
+
+        private void ReturnBtn_Click(object sender, EventArgs e)
+        {
+            ReturnForm returnForm = new ReturnForm();
+            returnForm.Show();
+            Close();
+        }
     }
 }
