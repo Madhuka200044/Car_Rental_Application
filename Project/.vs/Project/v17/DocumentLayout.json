@@ -1,0 +1,228 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Car Rental Application\\Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|d:\\car rental application\\project\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|solutionrelative:adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|D:\\Car Rental Application\\Project\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|solutionrelative:adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|D:\\Car Rental Application\\Project\\rentalform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|solutionrelative:rentalform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|D:\\Car Rental Application\\Project\\returnform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|solutionrelative:returnform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|D:\\Car Rental Application\\Project\\returnform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|solutionrelative:returnform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|D:\\Car Rental Application\\Project\\rentalform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|solutionrelative:rentalform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|D:\\Car Rental Application\\Project\\customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|solutionrelative:customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|D:\\Car Rental Application\\Project\\customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|solutionrelative:customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|D:\\Car Rental Application\\Project\\addcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|solutionrelative:addcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|D:\\Car Rental Application\\Project\\addcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|solutionrelative:addcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__NEW_FOLDER__3__PROJECT_CARREG.MDF/True/SqlTable/dbo.AddCarTable.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__NEW_FOLDER__3__PROJECT_CARREG.MDF/True/SqlTable/dbo.AddCustomerTable.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__NEW_FOLDER__3__PROJECT_CARREG.MDF/True/SqlTable/dbo.RentalTable.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|D:\\Car Rental Application\\Project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABAAA28D-A278-4172-AF49-913B55E96501}|Project.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminForm.cs",
+              "DocumentMoniker": "D:\\Car Rental Application\\Project\\AdminForm.cs",
+              "RelativeDocumentMoniker": "AdminForm.cs",
+              "ToolTip": "D:\\Car Rental Application\\Project\\AdminForm.cs",
+              "RelativeToolTip": "AdminForm.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAEwDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T12:03:39.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminForm.cs [Design]",
+              "DocumentMoniker": "D:\\Car Rental Application\\Project\\AdminForm.cs",
+              "RelativeDocumentMoniker": "AdminForm.cs",
+              "ToolTip": "D:\\New folder (3)\\Project\\AdminForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\New folder (3)\\Project\\AdminForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T12:03:33.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CustomerForm.cs",
+              "DocumentMoniker": "D:\\Car Rental Application\\Project\\CustomerForm.cs",
+              "RelativeDocumentMoniker": "CustomerForm.cs",
+              "ToolTip": "D:\\Car Rental Application\\Project\\CustomerForm.cs",
+              "RelativeToolTip": "CustomerForm.cs",
+              "ViewState": "AgIAANcAAAAAAAAAAADwv/4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T11:44:48.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomerForm.cs [Design]",
+              "DocumentMoniker": "D:\\Car Rental Application\\Project\\CustomerForm.cs",
+              "RelativeDocumentMoniker": "CustomerForm.cs",
+              "ToolTip": "D:\\New folder (3)\\Project\\CustomerForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\New folder (3)\\Project\\CustomerForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T11:44:46.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddCar.cs",
+              "DocumentMoniker": "D:\\Car Rental Application\\Project\\AddCar.cs",
+              "RelativeDocumentMoniker": "AddCar.cs",
+              "ToolTip": "D:\\Car Rental Application\\Project\\AddCar.cs",
+              "RelativeToolTip": "AddCar.cs",
+              "ViewState": "AgIAAPQAAAAAAAAAAAAkwBoBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T11:44:25.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AddCar.cs [Design]",
+              "DocumentMoniker": "D:\\Car Rental Application\\Project\\AddCar.cs",
+              "RelativeDocumentMoniker": "AddCar.cs",
+              "ToolTip": "D:\\New folder (3)\\Project\\AddCar.cs [Design]",
+              "RelativeToolTip": "..\\..\\New folder (3)\\Project\\AddCar.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T11:44:20.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RentalForm.cs",
+              "DocumentMoniker": "D:\\Car Rental Application\\Project\\RentalForm.cs",
+              "RelativeDocumentMoniker": "RentalForm.cs",
+              "ToolTip": "D:\\New folder (3)\\Project\\RentalForm.cs*",
+              "RelativeToolTip": "..\\..\\New folder (3)\\Project\\RentalForm.cs*",
+              "ViewState": "AgIAAMAAAAAAAAAAAADwv6cAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T10:49:47.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RentalForm.cs [Design]",
+              "DocumentMoniker": "D:\\Car Rental Application\\Project\\RentalForm.cs",
+              "RelativeDocumentMoniker": "RentalForm.cs",
+              "ToolTip": "D:\\New folder (3)\\Project\\RentalForm.cs [Design]*",
+              "RelativeToolTip": "..\\..\\New folder (3)\\Project\\RentalForm.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T10:49:45.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReturnForm.cs [Design]",
+              "DocumentMoniker": "D:\\Car Rental Application\\Project\\ReturnForm.cs",
+              "RelativeDocumentMoniker": "ReturnForm.cs",
+              "ToolTip": "D:\\New folder (3)\\Project\\ReturnForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\New folder (3)\\Project\\ReturnForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T10:21:43.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReturnForm.cs",
+              "DocumentMoniker": "D:\\Car Rental Application\\Project\\ReturnForm.cs",
+              "RelativeDocumentMoniker": "ReturnForm.cs",
+              "ToolTip": "D:\\Car Rental Application\\Project\\ReturnForm.cs",
+              "RelativeToolTip": "ReturnForm.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAYwM8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T10:23:06.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "dbo.AddCustomerTable.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__NEW_FOLDER__3__PROJECT_CARREG.MDF/True/SqlTable/dbo.AddCustomerTable.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__NEW_FOLDER__3__PROJECT_CARREG.MDF/True/SqlTable/dbo.AddCustomerTable.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-09T11:18:33.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "dbo.RentalTable.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__NEW_FOLDER__3__PROJECT_CARREG.MDF/True/SqlTable/dbo.RentalTable.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__NEW_FOLDER__3__PROJECT_CARREG.MDF/True/SqlTable/dbo.RentalTable.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-09T11:18:40.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "dbo.AddCarTable.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__NEW_FOLDER__3__PROJECT_CARREG.MDF/True/SqlTable/dbo.AddCarTable.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__NEW_FOLDER__3__PROJECT_CARREG.MDF/True/SqlTable/dbo.AddCarTable.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-09T11:18:51.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Car Rental Application\\Project\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Car Rental Application\\Project\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T10:05:00.906Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

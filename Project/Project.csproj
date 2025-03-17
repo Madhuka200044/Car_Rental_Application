@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ABAAA28D-A278-4172-AF49-913B55E96501}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCar.Designer.cs">
+      <DependentUpon>AddCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerForm.Designer.cs">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingForm.Designer.cs">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RentalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentalForm.Designer.cs">
+      <DependentUpon>RentalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnForm.Designer.cs">
+      <DependentUpon>ReturnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignupForm.Designer.cs">
+      <DependentUpon>SignupForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCar.resx">
+      <DependentUpon>AddCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerForm.resx">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RentalForm.resx">
+      <DependentUpon>RentalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnForm.resx">
+      <DependentUpon>ReturnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignupForm.resx">
+      <DependentUpon>SignupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CarReg.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CarReg_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>CarReg.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\rent-a-car-zim-beograd-o-nama-1.jpg" />
+    <None Include="Resources\free-photo-of-display-of-new-cars1.jpeg" />
+    <None Include="Resources\free-photo-of-three-parked-toyota-land-cruisers1.jpeg" />
+    <None Include="Resources\1707224066263.jpg" />
+    <None Include="Resources\images %282%29.jpg" />
+    <None Include="Resources\RoyalRent car rent  app logo car8.jpg" />
+    <None Include="Resources\free-photo-of-three-parked-toyota-land-cruisers.jpeg" />
+    <None Include="Resources\free-photo-of-display-of-new-cars.jpeg" />
+    <None Include="Resources\free-photo-of-volvo-s-90-in-car-showroom.jpeg" />
+    <None Include="Resources\pexels-photo-79808731.jpeg" />
+    <None Include="Resources\free-photo-of-black-vintage-mercedes-w126.jpeg" />
+    <None Include="Resources\pexels-photo-7980873.jpeg" />
+    <None Include="Resources\pexels-photo-70912.jpeg" />
+    <None Include="Resources\pexels-photo-116675.jpeg" />
+    <None Include="Resources\pexels-photo-12356888.jpeg" />
+    <None Include="Resources\free-photo-of-sports-cars-parked-in-a-row.jpg" />
+    <None Include="Resources\pexels-charles-kettor-268979-1077785.jpg" />
+    <None Include="Resources\pexels-ibragraphics-12191023.jpg" />
+    <None Include="Resources\pexels-pixabay-164634.jpg" />
+    <None Include="Resources\depositphotos_136924290-stock-photo-cars-parked-along-the-street.jpg" />
+    <None Include="Resources\used-jeep-vehicles-for-sale-line-up-at-a-dealership-in-monroeville-pennsylvania-usa-2HT9XB2.jpg" />
+    <None Include="Resources\37253821536_9d94f920f8_b1.jpg" />
+    <None Include="Resources\37253821536_9d94f920f8_b.jpg" />
+    <None Include="Resources\cars-in-a-sunset-1 %281%29.jpg" />
+    <None Include="Resources\download.jpg" />
+    <None Include="Resources\RoyalRent car rent  app logo car7.jpg" />
+    <None Include="Resources\RoyalRent car rent  app logo car6.jpg" />
+    <None Include="Resources\RoyalRent car rent  app logo car5.jpg" />
+    <None Include="Resources\cars-in-a-sunset-1.jpg" />
+    <None Include="Resources\images %281%29.jpg" />
+    <None Include="Resources\RoyalRent car rent  app logo car4.jpg" />
+    <None Include="Resources\RoyalRent car rent  app logo car3.jpg" />
+    <None Include="Resources\Untitled design %281%29.png" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\RoyalRent car rent  app logo car2.jpg" />
+    <None Include="Resources\RoyalRent car rent  app logo car1.jpg" />
+    <None Include="Resources\ls1.jpg" />
+    <None Include="Resources\ls.jpg" />
+    <None Include="Resources\OIP %288%29.jpg" />
+    <None Include="Resources\desktop-wallpaper-computer-backgrounds-car-rental-187-71-kb-backgrounds %281%29.jpg" />
+    <None Include="Resources\th.jpg" />
+    <None Include="Resources\OIP %287%29.jpg" />
+    <None Include="Resources\OIP %285%29.jpg" />
+    <None Include="Resources\OIP %284%29.jpg" />
+    <None Include="Resources\OIP %286%29.jpg" />
+    <None Include="Resources\OIP %282%29.jpg" />
+    <None Include="Resources\OIP %281%29.jpg" />
+    <None Include="Resources\car-rental-india.jpg" />
+    <None Include="Resources\car-rental-luxury-amazing-wallpapers.jpg" />
+    <None Include="Resources\maxresdefault.jpg" />
+    <None Include="Resources\desktop-wallpaper-computer-backgrounds-car-rental-187-71-kb-backgrounds.jpg" />
+    <None Include="Resources\da04958d250a0a2e589d2d11286079241.jpg" />
+    <None Include="Resources\car-parked-at-outdoor-parking-lot-used-car-for-sale-and-rental-service-car-insurance-background-automobile-parking-area-car-dealership-and-dealer-agent-concept-automotive-industry-generative-ai-photo.jpg" />
+    <None Include="Resources\OIP.jpg" />
+    <None Include="Resources\da04958d250a0a2e589d2d1128607924.jpg" />
+    <None Include="Resources\d872f049df4bb659b0d16154ccc837d7.jpg" />
+    <None Include="Resources\man-s-hand-holding-mobile-phone-front-traffic-road_23-2148139909.jpg" />
+    <None Include="Resources\randy-tarampi-cPVj7QlcKyM-unsplash.jpg" />
+    <None Include="Resources\RoyalRent_car_rent__app_logo_car-removebg-preview.png" />
+    <None Include="Resources\istockphoto-1146680261-1024x1024.jpg" />
+    <None Include="Resources\istockphoto-1285180944-612x612.jpg" />
+    <None Include="Resources\RoyalRent car rent  app logo car.jpg" />
+    <None Include="Resources\logo2-removebg-preview2.png" />
+    <None Include="Resources\logo2-removebg-preview1.png" />
+    <None Include="Resources\logo2-removebg-preview.png" />
+    <None Include="Resources\stylish-black-woman-car-salon_1157-21402.jpg" />
+    <None Include="Resources\WhatsApp Image 2024-11-05 at 23.05.43_4df276a5.jpg" />
+    <None Include="Resources\chris-liverani-HUJDz6CJEaM-unsplash.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
